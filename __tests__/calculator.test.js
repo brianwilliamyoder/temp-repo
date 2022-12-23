@@ -17,10 +17,10 @@ describe('AgeCalculator', () => {
 
 
   test('should calculate a persons mercury age, years until age, and years since age', () => {
-    person.convertMercuryAge(person.age, untilAge, sinceAge);
-    expect(person.age).toEqual(154.17);
-    expect(person.yearsUntil.mercury).toEqual();
-    expect(person.yearsSince.mercury).toEqual();
+    person.convertMercuryAge(39, 36);
+    expect(person.planetAge.mercury).toEqual("154.17");
+    expect(person.yearsUntil.mercury).toEqual("8.33");
+    expect(person.yearsSince.mercury).toEqual("4.17");
 
   })
 
@@ -46,5 +46,24 @@ describe('AgeCalculator', () => {
     expect(person.yearsUntilEarth(39)).toEqual(2);
   })
 
+  test('should calculate a persons age on all planets, including years since, and years until a given age', () => {
+  person.convertEarthAge(39, 36);
+  person.convertMercuryAge(39, 36);
+  person.convertVenusAge(39, 36);
+  person.convertMarsAge(39, 36);
+  person.convertJupiterAge(39, 36)
+  expect(person.yearsUntil.earth).toEqual("2");
+  expect(person.yearsSince.earth).toEqual("1");
+  expect(person.yearsUntil.mercury).toEqual();
+  expect(person.yearsSince.mercury).toEqual();
+  expect(person.yearsUntil.venus).toEqual();
+  expect(person.yearsSince.venus).toEqual();
+  expect(person.yearsUntil.mars).toEqual();
+  expect(person.yearsSince.mars).toEqual();
+  expect(person.yearsUntil.jupiter).toEqual();
+  expect(person.yearsSince.jupiter).toEqual();
+  
+
+  })
 
 })
