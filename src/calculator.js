@@ -3,7 +3,7 @@ export class AgeCalculator {
     this.age = age;
     this.planetAge = {};
     this.yearsUntil = {};
-    this.yearsSince = {}
+    this.yearsSince = {};
   }
 
   convertMercuryAge(untilAge, sinceAge) {
