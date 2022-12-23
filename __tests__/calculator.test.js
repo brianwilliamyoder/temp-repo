@@ -25,5 +25,6 @@ describe('AgeCalculator', () => {
     person.convertVenusAge();
     expect(person.planetAge.venus).toEqual("59.68");
   
-})
+  })
 
+})
