@@ -4,5 +4,11 @@ export class AgeCalculator {
     this.age = age;
     this.planetAge = {};
   }
+
+  convertPlanetAge() {
+    let mercAge =  this.age / .24;
+    this.planetAge.mercury = mercAge.toFixed(2);
+    
+  }
+
 }
-  
