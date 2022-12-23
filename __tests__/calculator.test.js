@@ -39,4 +39,9 @@ describe('AgeCalculator', () => {
     expect(person.planetAge.jupiter).toEqual("3.12");
   })
 
+  test('should calculate years until a birthday in earth years', () => {
+    person.yearsUntilEarth(39);
+    expect(person.planetAge.yearsUntil.earth).toEqual("2");
+  })
+
 })
