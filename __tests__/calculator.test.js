@@ -20,5 +20,10 @@ describe('AgeCalculator', () => {
     expect(person.planetAge.mercury).toEqual("154.17");
 
   })
+
+  test('should calculate a persons venus age', () => {
+    person.convertVenusAge();
+    expect(person.planetAge.venus).toEqual("59.68");
+  
 })
 
