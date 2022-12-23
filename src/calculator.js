@@ -14,5 +14,11 @@ export class AgeCalculator {
     let venusAge = this.age / .62;
     this.planetAge.venus = venusAge.toFixed(2);
   }
-}
 
+
+  convertMarsAge() {
+    let marsAge = this.age / 1.88;
+    this.planetAge.mars = marsAge.toFixed(2);
+  }
+  
+}
