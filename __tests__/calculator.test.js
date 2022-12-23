@@ -27,4 +27,10 @@ describe('AgeCalculator', () => {
   
   })
 
+  test('should calculate a persons mars age', () => {
+    person.convertMarsAge();
+    expect(person.planetAge.mars).toEqual("19.68");
+  
+  })
+
 })
