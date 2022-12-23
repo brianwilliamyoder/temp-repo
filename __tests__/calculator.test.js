@@ -14,8 +14,9 @@ describe('AgeCalculator', () => {
     expect(person.planetAge).toEqual({});
   })
 
+
   test('should calculate a persons mercury age', () => {
-    person.convertPlanetAge();
+    person.convertMercuryAge();
     expect(person.planetAge.mercury).toEqual("154.17");
 
   })
