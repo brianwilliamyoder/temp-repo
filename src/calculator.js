@@ -18,8 +18,6 @@ export class AgeCalculator {
     this.planetAge.venus = venusAge.toFixed(2);
     this.yearsUntil.venus = ((untilAge / .62) - venusAge).toFixed(2);
     this.yearsSince.venus = (venusAge - (sinceAge / .62)).toFixed(2);
-
-   
   }
 
   convertMarsAge(untilAge, sinceAge) {
