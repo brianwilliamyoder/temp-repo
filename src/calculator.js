@@ -1,8 +1,9 @@
 export class AgeCalculator {
-  constructor(name, age) {
-    this.name = name;
+  constructor(age) {
     this.age = age;
     this.planetAge = {};
+    this.yearsUntil = {};
+    this.yearsSince = {}
   }
 
   convertMercuryAge() {

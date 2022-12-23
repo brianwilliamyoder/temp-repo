@@ -5,13 +5,14 @@ describe('AgeCalculator', () => {
   let person;
 
   beforeEach(() => {
-    person = new AgeCalculator("Brian", 37);
+    person = new AgeCalculator(37);
   });
 
   test('should create a new calculator object with properties', () => {
-    expect(person.name).toEqual("Brian");
     expect(person.age).toEqual(37);
     expect(person.planetAge).toEqual({});
+    expect(person.yearsUntil).toEqual({});
+    expect(person.yearsSince).toEqual({});
   })
 
 
