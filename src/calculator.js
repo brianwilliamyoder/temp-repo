@@ -20,5 +20,9 @@ export class AgeCalculator {
     let marsAge = this.age / 1.88;
     this.planetAge.mars = marsAge.toFixed(2);
   }
-  
+
+  convertJupiterAge() {
+    let jupiterAge = this.age / 11.86;
+    this.planetAge.jupiter = jupiterAge.toFixed(2);
+  }
 }
