@@ -33,4 +33,9 @@ describe('AgeCalculator', () => {
   
   })
 
+  test('should calculate a persons jupiter age', () => {
+    person.convertJupiterAge();
+    expect(person.planetAge.jupiter).toEqual("3.12");
+  })
+
 })
